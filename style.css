@@ -1,0 +1,78 @@
+table{
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+    border-style: none;
+}
+
+.board_div {
+    padding: 30px;
+    box-sizing: border-box;
+}
+.board {
+    table-layout: fixed;
+    border-spacing: 3px;
+}
+.cell {
+    border: 2px;
+    border-style: solid;
+    border-color: lightgrey;
+}
+.cell div{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.keyboard {
+    width: 360px;
+    height: 160px;
+    table-layout: fixed;
+    font-size: 12px;
+    border-spacing: 5px;
+}
+.key {
+    text-align: center;
+    color: black;
+    background-color: lightgrey;
+    border-style: none;
+    border-radius: 5px;
+}
+.empty {
+    border-style: none;
+}
+
+.occupied {
+    border-color: black;
+}
+.strike {
+    color: white;
+    background-color: olivedrab;
+    border-color: lightgrey;
+}
+.ball {
+    color: white;
+    background-color: goldenrod;
+    border-color: lightgrey;
+}
+.wrong {
+    color: white;
+    background-color: grey;
+    border-color: lightgrey;
+}
+.animate {
+    animation: rotate 1s;
+}
+
+@keyframes rotate {
+    0% {
+        transform: scaleY(1);
+    }
+    50% {
+        transform: scaleY(0);
+    }
+    100% {
+        transform: scaleY(1);
+    }
+}
